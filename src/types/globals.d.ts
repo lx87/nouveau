@@ -3,4 +3,4 @@ declare global {
     type int = number
 }
 
-export { }
+export = {}

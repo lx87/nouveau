@@ -12,18 +12,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root,
-body {
-  width: inherit;
-  height: inherit;
+p,
+h,
+div {
+  cursor: default;
 }
 
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 .main-grid .card {
   text-align: center;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 2rem;
+}
+
+.description {
+  font-size: .8rem;
 }
