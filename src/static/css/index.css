@@ -2,7 +2,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 
@@ -16,6 +16,10 @@ p,
 h,
 div {
   cursor: default;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
 }
 
 .main-grid {
@@ -44,4 +48,9 @@ div {
 
 .description {
   font-size: .8rem;
+}
+
+.navbar {
+  background-color: rgba(26, 26, 26, 0.575);
+  backdrop-filter: blur(2px);
 }

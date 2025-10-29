@@ -4,9 +4,9 @@ import Container from 'react-bootstrap/Container';
 
 const Footer = () => {
     return (
-        <Navbar expand className="bg-body-tertiary">
+        <Navbar expand className="navbar">
             <Container fluid className="p-3">
-                <p className="m-0">Enfants Riches Déprimés © 2025 All rights reserved</p>
+                <p className="m-0">Nouveau © 2025 All rights reserved</p>
             </Container>
         </Navbar>
     );

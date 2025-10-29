@@ -5,7 +5,6 @@ import img3 from "../static/img/item3-700.png"
 import img4 from "../static/img/item4-700.png"
 import ProductCard from "../components/ProductCard";
 
-
 const Home = () => {
     return (
         <>
@@ -18,7 +17,7 @@ const Home = () => {
                     Referred to as simply ERD is known for luxury one-of-a-kind pieces. <br />
                     <a className="pre">more</a>
                 </span>
-                <Button variant="info">Follow</Button>
+                <Button variant="primary">Follow</Button>
             </Container>
             <Container fluid className="my-5 main-grid px-4">
                 <ProductCard title="Constructivist Hunting Jacket" color="Faded red" price="3,550" img={img1} description="ZIP FRONT JACKET IN JAPANESE COTTON CANVAS WITH COTTON FLANNEL LINING..BURNISHED GOAT LEATHER COLLAR. BELLOWS POCKETS AT FRONT. PRINTED ARTWORK AT FRONT, BACK, SLEEVE, & PATCHES. LOGO-BRANDED SNAP CLOSURE AT STORM FLAP IN FRONT AND AT WRISTS. ELASTIC AT WAISTBAND. DISTRESSING THROUGHOUT. MADE IN THE USA." />

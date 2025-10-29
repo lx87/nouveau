@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 const NoMatch = () => {
     return (
         <Container fluid className="px-4 main d-flex justify-content-center align-items-center">
+            <code className="display-1" style={{ color: "#0d6efd" }}>404</code>
             <h1>Page not found</h1>
         </Container>
     );

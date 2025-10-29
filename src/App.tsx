@@ -7,7 +7,7 @@ import NoMatch from "./pages/NoMatch"
 
 function App() {
   return (
-    <Router basename="/erd-shop/">
+    <Router basename="/nouveau/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

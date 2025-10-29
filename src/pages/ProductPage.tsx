@@ -22,7 +22,7 @@ const ProductPage = () => {
                     alt={item.title}
                 />
                 <div className="d-flex">
-                    <Button className="fw-bold" variant="info">Add to cart — ${item.price}.00</ Button>
+                    <Button className="fw-bold" variant="primary">Add to cart — ${item.price}.00</ Button>
                 </div>
             </Container>
         </Container>
