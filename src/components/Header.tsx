@@ -8,7 +8,7 @@ function Header() {
     return (
         <Navbar expand className="navbar" sticky="top">
             <Container fluid className="px-4">
-                <Navbar.Brand href="/" className="fw-bold">
+                <Navbar.Brand as={Link} to={"/"} className="fw-bold">
                     <img src={Icon} style={{ width: "40px" }} alt="logo" /> Nouveau
                 </Navbar.Brand>
                 <Navbar.Toggle />

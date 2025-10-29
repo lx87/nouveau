@@ -16,7 +16,7 @@ const ProductCard = ({ title, color, price, img, description }: CardProps) => {
             <Card.Body>
                 <Card.Title
                     as={Link}
-                    to="/products"
+                    to="products"
                     state={{ title, color, price, img, description }}
                     style={{ textDecoration: "none" }}
                 >
