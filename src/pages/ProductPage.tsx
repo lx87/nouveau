@@ -6,7 +6,7 @@ const ProductPage = () => {
     const item = state || {};
 
     if (!state) {
-        return <Navigate to="404" replace />;
+        return <Navigate to="/404" replace />;
     }
 
     return (
