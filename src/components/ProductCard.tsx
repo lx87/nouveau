@@ -11,13 +11,15 @@ interface CardProps {
 
 const ProductCard = ({ title, color, price, img, description }: CardProps) => {
     return (
-        <Card>
+        <Card
+            as={Link}
+            to="products"
+            state={{ title, color, price, img, description }}
+            style={{ textDecoration: "none" }}
+        >
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title
-                    as={Link}
-                    to="products"
-                    state={{ title, color, price, img, description }}
                     style={{ textDecoration: "none" }}
                 >
                     {title}

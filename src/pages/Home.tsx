@@ -1,8 +1,8 @@
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Row, Col, Badge } from "react-bootstrap";
 import img1 from "../static/img/item1-700.png";
-import img2 from "../static/img/item2-700.png"
-import img3 from "../static/img/item3-700.png"
-import img4 from "../static/img/item4-700.png"
+import img2 from "../static/img/item2-700.png";
+import img3 from "../static/img/item3-700.png";
+import img4 from "../static/img/item4-700.png";
 import ProductCard from "../components/ProductCard";
 
 const Home = () => {
@@ -19,6 +19,31 @@ const Home = () => {
                 </span>
                 <Button variant="primary">Follow</Button>
             </Container>
+
+            <Container fluid className="my-4 px-4">
+                <Row className="align-items-center bg-dark p-4 rounded-3">
+                    <Col md={8}>
+                        <h3 className="fw-semibold">New Arrivals</h3>
+                        <p className="m-0">Discover the exclusive ERD pieces that have just arrived.</p>
+                    </Col>
+                    <Col md={4} className="text-md-end">
+                        <Button>View All</Button>
+                    </Col>
+                </Row>
+
+                <Row className="mt-3">
+                    <Col>
+                        <div className="d-flex flex-wrap gap-2">
+                            <Badge bg="secondary">Jackets</Badge>
+                            <Badge bg="secondary">Hoodies</Badge>
+                            <Badge bg="secondary">Belts</Badge>
+                            <Badge bg="secondary">Sweatshirts</Badge>
+                            <Badge bg="secondary">Limited Edition</Badge>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
             <Container fluid className="my-5 main-grid px-4">
                 <ProductCard title="Constructivist Hunting Jacket" color="Faded red" price="3,550" img={img1} description="ZIP FRONT JACKET IN JAPANESE COTTON CANVAS WITH COTTON FLANNEL LINING..BURNISHED GOAT LEATHER COLLAR. BELLOWS POCKETS AT FRONT. PRINTED ARTWORK AT FRONT, BACK, SLEEVE, & PATCHES. LOGO-BRANDED SNAP CLOSURE AT STORM FLAP IN FRONT AND AT WRISTS. ELASTIC AT WAISTBAND. DISTRESSING THROUGHOUT. MADE IN THE USA." />
                 <ProductCard title="Psychothérapie De L'adolescent Hoodie" color="Antique green" price="1,590" img={img2} description="LONG-SLEEVE PULLOVER HOODED SWEATSHIRT MADE OF HEAVY WEIGHT BRUSHED FRENCH TERRY. BOXY, DROP-SHOULDER FIT. DOUBLE LAYER HOOD. RIB KNIT CUFFS & WAISTBAND. PRINTED ARTWORK AT FRONT & BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA." />
